@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GET TEXT</title>
+    <style>
+        .img-fluido {
+            max-width: 100%;
+            height: 400px;
+        }
+
+        .form-controlo {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 8px solid #4c679c;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#" style="
+    font-size: 34px;
+">GET TEXT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+        <center>
+            <img src="{{url}}" class="mt-5 pt-5 img-fluido" alt="Responsive image">
+            <div class="mt-3 form-group">
+                <label for="exampleFormControlTextarea1"><strong>Text From Image<strong></label>
+            </div>
+            <form action="/read/" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="strtext" id="myInput" value="{{text}}">
+                <textarea class="form-controlo" id="exampleFormControlTextarea1" rows="5"
+                    style="height: 244px;width: -webkit-fill-available;">{{text}}</textarea>
+                <button type="submit" class="mt-5 btn btn-warning">Read Text</button>
+
+            </form>
+
+        </center>
+
+        <div>
+
+</body>
+<html>

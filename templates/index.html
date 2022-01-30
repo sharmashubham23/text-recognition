@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GET TEXT</title>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            color: #000;
+            display: block;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        .grid {
+            height: 23px;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .signbutton {
+            background-color: #4885ed;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 7px 10px;
+            position: relative;
+            bottom: 7px;
+            font-weight: bold;
+        }
+
+        .logo {
+            margin-top: 200px;
+            margin-bottom: 20px;
+        }
+
+        .bar {
+            margin: 0 auto;
+            width: 575px;
+            border-radius: 30px;
+            border: 1px solid #dcdcdc;
+        }
+
+        .bar:hover {
+            box-shadow: 1px 1px 8px 1px #dcdcdc;
+        }
+
+        .bar:focus-within {
+            box-shadow: 1px 1px 8px 1px #dcdcdc;
+            outline: none;
+        }
+
+        .searchbar {
+            height: 45px;
+            border: none;
+            width: 500px;
+            font-size: 16px;
+            outline: none;
+
+        }
+
+        .voice {
+            height: 20px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: #f5f5f5;
+            border: none;
+            color: #707070;
+            font-size: 15px;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .button:hover {
+            border: 1px solid #c8c8c8;
+            padding: 9px 19px;
+            color: #808080;
+        }
+
+        .button:focus {
+            border: 1px solid #4885ed;
+            padding: 9px 19px;
+        }
+
+        .img-fluido {
+            max-width: 100%;
+            height: 300px;
+            width: 332px;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#" style="
+    font-size: 34px;
+">GET TEXT WEBSITE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <center>
+            <h1 class="mb-5">Extract Text From Image</h1>
+            <form action="/imgurl/" method="post">
+                {% csrf_token %}
+
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">IMAGE URL</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Large" name="imgurl"
+                        aria-describedby="inputGroup-sizing-sm">
+                </div>
+
+                <button type="submit" class="mt-5 btn btn-primary">Get Text</button>
+            </form>
+
+
+    </div>
+    <div>
+        <p>{{text}}
+        </p>
+        <center>
+            <br>
+            <br>
+            <h2>Or Choose Any Image </h2>
+            <br>
+            <a href="/imgurl/?urlimg=https://i.stack.imgur.com/35SY5.png">
+                <img src="https://i.stack.imgur.com/35SY5.png" class="img-fluido" alt="Responsive image">
+            </a>
+            <a href="/imgurl/?urlimg=https://www.imgonline.com.ua/examples/text-photographed-eng-preview.jpg">
+                <img src="https://www.imgonline.com.ua/examples/text-photographed-eng-preview.jpg" class="img-fluido"
+                    alt="Responsive image">
+            </a>
+            <a href="/imgurl/?urlimg=https://www.logogenie.net/images/articles/best-business-card1.jpg">
+                <img src="https://www.logogenie.net/images/articles/best-business-card1.jpg" class="img-fluido"
+                    alt="Responsive image">
+            </a>
+            <a
+                href="/imgurl/?urlimg=https://world.openfoodfacts.org/images/products/888/800/207/6009/ingredients_en.12.full.jpg">
+                <img src="https://world.openfoodfacts.org/images/products/888/800/207/6009/ingredients_en.12.full.jpg"
+                    class="img-fluido" alt="Responsive image">
+            </a>
+            <a
+                href="/imgurl/?urlimg=https://www.prettygirlsbd.com/wp-content/uploads/2020/06/e40aa2e9-75ef-4035-bb75-a63b63e231f91575440506657-Mamaearth-Onion-Hair-Fall-Shampoo-250-ml-8541575440506156-3.jpg">
+                <img src="https://www.prettygirlsbd.com/wp-content/uploads/2020/06/e40aa2e9-75ef-4035-bb75-a63b63e231f91575440506657-Mamaearth-Onion-Hair-Fall-Shampoo-250-ml-8541575440506156-3.jpg"
+                    class="img-fluido" alt="Responsive image">
+            </a>
+        </center>
+    </div>
+    </center>
+</body>
+
+</html>
