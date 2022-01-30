@@ -1,9 +1,6 @@
 # GET TEXT
 ## It Is A Simple Program To Extract Text From Image. Text Can Be Hand Written Or Typed. 
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/vcfLhWokDdM/0.jpg)](https://www.youtube.com/watch?v=vcfLhWokDdM)
-
 
 
 Get Text is a simple cloud-enabled and mobile-ready program built using azure cognitive services i.e. Computer vision and Speech service.
