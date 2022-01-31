@@ -1,7 +1,4 @@
 # GET TEXT
-
-## Give Below Is Video Demo Of Project
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BDHQab8-SoQ/0.jpg)](https://www.youtube.com/watch?v=BDHQab8-SoQ)
 ## It Is A Simple Program To Extract Text From Image. Text Can Be Hand Written Or Typed. 
 Get Text is a simple cloud-enabled and mobile-ready program built using azure cognitive services i.e. Computer vision and Speech service.
 
