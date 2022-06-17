@@ -4,7 +4,7 @@ Get Text is a simple cloud-enabled and mobile-ready program built using azure co
 
 - Computer Vision is used for extracting text from images.
 - Speech service is used to convert extracted text to speech.
-# DEMO VIDEO
+## DEMO VIDEO
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BDHQab8-SoQ/0.jpg)](https://www.youtube.com/watch?v=BDHQab8-SoQ)
 
 ## Features
